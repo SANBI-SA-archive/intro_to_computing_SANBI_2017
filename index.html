@@ -6,14 +6,14 @@ address: "5th floor, Life Sciences Building"      # street address of workshop (
 country: "za"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "-33.9316948,18.6229176"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "Mar 7-11, 2016"    # human-readable date (e.g., "Feb 17-18, 2020")
+humandate: "27 Feb - 1 Mar, 2017"    # human-readable date (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 1:00 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: 2016-03-07      # use YYYY-MM-DD format like 2015-01-01
-enddate: 2016-03-11        # use YYYY-MM-DD format like 2015-01-02
+startdate: 2017-02-27      # use YYYY-MM-DD format like 2015-01-01
+enddate: 2017-03-01        # use YYYY-MM-DD format like 2015-01-02
 instructor: ["Peter van Heusden"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper:     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "pvh@sanbi.ac.za"      # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad: "http://pad.software-carpentry.org/computing-sanbi-032016"        # optional (insert the URL for your Etherpad if you're using one)
+etherpad: "http://pad.software-carpentry.org/computing-sanbi-022017"        # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 <!--
@@ -52,10 +52,11 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   the pitch.
 -->
 <p>
-  The material in this workshop is largely based around that produced by <a href="{{site.swc_site}}">Software Carpentry</a>. 
-  Software Carpentry's mission is to help scientists and engineers get more research done in less
+  The material in this workshop is largely based around that produced by <a href="{{site.swc_site}}">Software Carpentry</a>
+  and <a href="{{site.dwc_site}}">Data Carpentry</a>.
+  Software and Data Carpentry's mission is to help scientists and engineers get more research done in less
   time and with less pain by teaching them basic lab skills for
-  scientific computing.  This hands-on workshop will cover basic
+  scientific computing.  This hands-on introductory workshop will cover basic
   concepts and tools, including program design, version control, data
   management, and task automation.  Participants will be encouraged to
   help one another and to apply what they have learned to their own
@@ -153,20 +154,18 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     <h3>Day 1 - Monday</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td> <td>Workshop start and laptop check</td> </tr>
-      <tr> <td>09:30</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>11:00</td>  <td>Coffee</td> </tr>
-      <tr> <td>11:30</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>13:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>Morning</td>  <td>Automating tasks with the Unix shell</td> </tr>
+      <tr> <td>Lunchtime</td>  <td>Lunch</td> </tr>
+      <tr> <td>Afternoon</td>  <td>Automating tasks with the Unix shell</td> </tr>
     </table>
   </div>
 
   <div class="col-md-6">
     <h3>Day 2 - Tuesday</h3>
     <table class="table table-striped">
-      <tr> <td>09:30</td>  <td>Using the SANBI compute cluster</td> </tr>
-      <tr> <td>11:00</td>  <td>Coffee</td> </tr>
-      <tr> <td>11:30</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>13:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>Morning</td>  <td>Genomics data wrangling</td> </tr>
+      <tr> <td>Lunchtime</td>  <td>Lunch</td> </tr>
+      <tr> <td>Afternoon</td>  <td>Using a computer cluster</td> </tr>
     </table>
   </div>
 </div>
@@ -175,14 +174,13 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   <div class="col-md-6">
     <h3>Day 3 - Wednesday</h3>
     <table class="table table-striped">
-      <tr> <td>09:30</td>  <td>Programming with Python</td> </tr>
-      <tr> <td>11:00</td>  <td>Coffee</td> </tr>
-      <tr> <td>11:30</td>  <td>Programming with Python</td> </tr>
-      <tr> <td>13:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>Morning</td>  <td>Programming with Python</td> </tr>
+      <tr> <td>Lunchtime</td>  <td>Lunch</td> </tr>
+      <tr> <td>Afternoon</td>  <td>Programming with Python</td> </tr>
     </table>
   </div>
 
-  <div class="col-md-6">
+  <!-- <div class="col-md-6">
     <h3>Day 4 - Thursday</h3>
     <table class="table table-striped">
       <tr> <td>11:30</td>  <td>Programming with Python</td> </tr>
@@ -202,7 +200,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <tr> <td>11:30</td>  <td>Programming with Python</td> </tr>
       <tr> <td>13:00</td>  <td>Wrap-up</td> </tr>
     </table>
-  </div>
+  </div> -->
 </div>
 
 <!--
@@ -273,9 +271,9 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li>Loops and conditionals</li>
       <li>Defensive programming</li>
       <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_githubio}}/python-novice-inflammation">Notes...</a></li>
-      <li><a href="https://github.com/pvanheus/comp_0316_notebooks">IPython notebooks</a></li>
-      <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
+      <li><a href="{{site.swc_githubio}}/python-novice-gapminder">Notes...</a></li>
+      <!-- <li><a href="https://github.com/pvanheus/comp_0316_notebooks">IPython notebooks</a></li> -->
+      <li><a href="{{site.swc_githubio}}/python-novice-gapminder/reference.html">Reference...</a></li>
       <li><a href="http://www.datasciencecentral.com/group/tutorials/forum/topics/cheat-sheet-data-visualisation-in-python?xg_source=activity">Data visualisation in Python cheatsheet</a></li>
     </ul>
   </div>
@@ -309,7 +307,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 
 <div class="row">
   <div class="col-md-6">
-    <h3 id="syllabus-sanbicluster">Using the SANBI compute cluster</h3>
+    <h3 id="syllabus-sanbicluster">Using a compute cluster</h3>
     <ul>
       <li>Finding software</li>
       <li>Creating and submitting jobs</li>
@@ -319,7 +317,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     </ul>
   </div>
 
-  <div class="col-md-6">
+  <!-- <div class="col-md-6">
     <h3 id="syllabus-git">Version Control with Git</h3>
     <ul>
       <li>Creating a repository</li>
@@ -332,7 +330,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li>Where to host work, and why</li>
       <li><a href="{{site.swc_githubio}}/git-novice/reference.html">Reference...</a></li>
     </ul>
-  </div>
+  </div> -->
 <!--   <div class="col-md-6">
     <h3 id="syllabus-sql">Managing Data with SQL</h3>
     <ul>
@@ -366,7 +364,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a Software Carpentry workshop, you will need
+  For this workshop, you will need
   access to the software described below. In addition, you will
   need an up-to-date web browser.
 </p>
@@ -515,7 +513,11 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     exclamation mark), then hitting Return to return to the shell.
   </p>
 
-  <div class="row">
+  <p>While we will be using <em>nano</em> when in the Linux environment,
+    our recommended "programmers text editor" is <a href="https://atom.io/">Atom</a>.
+    This is available for Windows, Mac and Linux.
+  </p>
+  <!-- <div class="row">
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
       <p>
@@ -559,7 +561,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
         <a href="http://www.sublimetext.com/">Sublime Text</a> or <a href="https://atom.io/docs/v0.191.0/getting-started-installing-atom">Atom</a>.
       </p>
     </div>
-  </div>
+  </div> -->
 </div> <!-- End of 'editor' section. -->
 
 <div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
@@ -580,7 +582,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     <p>
       Regardless of how you choose to install it,
       <strong>please make sure you install Python version 3.x</strong>
-      (e.g., 3.4 is fine).
+      (e.g., 3.4 or 3.5 or 3.6 is fine).
     </p>
 
     <p>
@@ -651,7 +653,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 <div id="scp">
   <h3>SSH and SCP</h3>
 
-  <p>The Secure (Remote) Shell (SSH) and Secure Copy (SCP) programs allow logging in 
+  <p>The Secure (Remote) Shell (SSH) and Secure Copy (SCP) programs allow logging in
   and copy data to and from remote machines.
   </p>
 
@@ -659,7 +661,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     <div class="col-md-4">
       <h4 id="ssh-windows">Windows</h4>
       <p>
-      Download the <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty</a> SSH client 
+      Download the <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty</a> SSH client
       (it runs from where you download it, no install necessary) and <a href="https://winscp.net/eng/download.php">WinSCP</a>
       SCP software.
       </p>
